@@ -9,15 +9,9 @@ import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
 
 
-export default function Body() {
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  return (
+export default function Body(About,asdfsad,asdsad,) {
+  
+  return ( 
     <div className="bg-[#0a192f] w-full min-h-screen flex justify-center items-center p-6">
       <div className="bg-[#112240] shadow-2xl rounded-lg w-full max-w-6xl p-8 text-white">
         <div className="">
@@ -50,7 +44,7 @@ export default function Body() {
             <ul 
               className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300  "
             >
-              About Me
+              About Me 
             </ul>
           </div>
 

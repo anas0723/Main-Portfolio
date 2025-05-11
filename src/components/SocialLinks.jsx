@@ -16,7 +16,7 @@ const SocialLinks = () => {
   return (
     <>
       <div className="flex justify-center mt-13">
-        <h1 className="md:text-6xl sm:text-3xl font-mono hover:border-2  flex  items-center justify-center   group:[inline]   text-[#64ffda]  mono  px-6 py-3 rounded-lg border-2  transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-[#64ffda]">
+        <h1 className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300  ">
           Social Links
         </h1>
       </div>

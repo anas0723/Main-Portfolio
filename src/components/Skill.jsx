@@ -37,7 +37,7 @@ export default function Skill() {
     <div id="skills" className="">
     <div className="bg-[#112240]  p-8">
     <div className="flex justify-center mt-13">
-      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center  p-4  hover:shadow-2xl hover:shadow-[#64ffda] text-centermd:text-6xl sm:text-3xl font-mono hover:border-2  flex  items-center justify-center   text-[#64ffda]  mono  rounded-lg border-2  transition-all duration-300 cursor-pointer">
+      <h1 className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300 mb-10 ">
         Languages & Tools
       </h1>
       </div>

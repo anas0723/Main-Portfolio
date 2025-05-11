@@ -7,7 +7,7 @@ const Project = () => {
     <>
       {/* First Card */}
       <div className="flex justify-center mt-13">
-      <h1 className="text-3xl  font-bold p-4 mb-6 text-centermd:text-6xl sm:text-3xl font-mono hover:border-2  flex  items-center justify-center   text-[#64ffda]  mono  rounded-lg border-2  transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-[#64ffda]">Project's</h1>
+      <h1 className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300  ">Project's</h1>
       </div>
       <div className=" min-h-screen flex items-center justify-center py-10 px-[30px]">
         <div className="bg-white rounded-3xl overflow-hidden shadow-lg w-full max-w-6xl">

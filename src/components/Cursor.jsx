@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
 
 export default function Cursor() {
   const mouseX = useMotionValue(0);
