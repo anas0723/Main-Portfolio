@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactTyped } from "react-typed";
 import FallingText from "./FallingText";
 import Skill from "./Skill";
 import Project from "./Project.jsx";
@@ -7,17 +6,19 @@ import SocialLinks from "./SocialLinks.jsx";
 import { LiaAcquisitionsIncorporated } from "react-icons/lia";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
+import { TypeAnimation } from "react-type-animation";
+import Cursor from  './Cursor.jsx';
+import Header  from "./Header.jsx";
 
-
-export default function Body(About,asdfsad,asdsad,) {
-  
-  return ( 
+export default function Body(About, asdfsad, asdsad) {
+  return (
+  <>
+    <Header />
     <div className="bg-[#0a192f] w-full min-h-screen flex justify-center items-center p-6">
       <div className="bg-[#112240] shadow-2xl rounded-lg w-full max-w-6xl p-8 text-white">
+         
         <div className="">
-          <h1 className="text-xl inline sm:text-2xl font-light">
-            Hi, Myself
-          </h1>
+          <h1 className="text-xl inline sm:text-2xl font-light">Hi, Myself</h1>
           <br />
           <h2 className="text-4xl inline sm:text-5xl font-bold text-[#64ffda] mt-2">
             Muhammad Anas
@@ -28,23 +29,18 @@ export default function Body(About,asdfsad,asdsad,) {
           </h3>
 
           <div className="mt-4 text-lg text-[#64ffda]">
-            <ReactTyped
-              strings={[
-                "Building sleek, responsive, and dynamic web apps",
-                "Always learning new things & dedicated to my work",
-                "I am MERN Stack Developer",
-              ]}
-              typeSpeed={50}
-              backSpeed={30}
-              loop
+            <TypeAnimation
+              sequence={["Building sleek, responsive, and dynamic web apps", 1000,
+                "Always learning new things & dedicated to my work", 1000,
+                "I am MERN Stack Developer",  1000]}
+              speed={50}
+              repeat={Infinity}
             />
           </div>
-        
+
           <div className="flex justify-center mt-6">
-            <ul 
-              className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300  "
-            >
-              About Me 
+            <ul className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300  ">
+              About Me
             </ul>
           </div>
 
@@ -71,7 +67,9 @@ export default function Body(About,asdfsad,asdsad,) {
               maintainable code and love solving complex problems. Check out
               some of my work
               <span className="font-semibold text-[#64ffda] hover:underline ml-1">
-                <a href="#Project" className="cursor-pointer">Projects</a>
+                <a href="#Project" className="cursor-pointer">
+                  Projects
+                </a>
               </span>
               . Let's build something amazing together! 🚀
             </p>
@@ -121,12 +119,15 @@ export default function Body(About,asdfsad,asdsad,) {
             mouseConstraintStiffness={0.9}
           />
         </div>
+          
         <Skill />
+        <Cursor />
         <Project />
         <SocialLinks />
         <Contact />
         <Footer />
       </div>
     </div>
+    </>
   );
 }

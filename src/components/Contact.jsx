@@ -12,34 +12,34 @@ const Contact = () => {
         </div>
         <form action="https://formspree.io/f/{your_form_id}" method="POST" className="space-y-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-semibold text-gray-700">Name</label>
+            <label htmlFor="name" className="block text-sm font-semibold text-gray-300">Name</label>
             <input
               type="text"
               name="name"
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none  focus:ring-[#64ffda]"
+              className="w-full px-4 py-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-[#64ffda] placeholder-gray-300"
               placeholder="Your Name"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-semibold text-gray-700">Email</label>
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-300">Email</label>
             <input
               type="email"
               name="email"
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
+              className="w-full px-4 py-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-[#64ffda] placeholder-gray-300"
               placeholder="your@email.com"
             />
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-semibold text-gray-700">Message</label>
+            <label htmlFor="message" className="block text-sm font-semibold text-gray-300">Message</label>
             <textarea
               name="message"
               rows="5"
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
+              className="w-full px-4 py-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-[#64ffda] placeholder-gray-300"
               placeholder="Your message..."
             ></textarea>
           </div>
@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-[#64ffda] text-black font-bold py-3 px-8 rounded-lg hover:bg-[#52e1c2] transition duration-300"
+              className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300 "
             >
               Send Message
             </button>
