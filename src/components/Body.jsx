@@ -8,12 +8,12 @@ import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
 import { TypeAnimation } from "react-type-animation";
 import Cursor from "./Cursor.jsx";
-import Header from "./Header.jsx";
+// import Header from "./Header.jsx";
 
 export default function Body() {
   return (
   <>
-    <Header />
+    {/* <Header /> */}
     <div className="bg-[#0a192f] w-full min-h-screen flex justify-center items-center p-6">
       <div className="bg-[#112240] shadow-2xl rounded-lg w-full max-w-6xl p-8 text-white">
          
