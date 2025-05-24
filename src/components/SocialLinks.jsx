@@ -4,6 +4,7 @@ import Github from "../assets/Pictures/Github-icons.svg";
 import LinkedIn from "../assets/Pictures/linkdin.jpg";
 import Facebook from "../assets/Pictures/Facebook.jpg";
 import Leetcode from "../assets/Pictures/Leetcode.webp";
+import resume from "../assets/Pictures/anas-me-resume.pdf";
 
 const SocialLinks = () => {
   const images = [
@@ -13,6 +14,11 @@ const SocialLinks = () => {
     { src: Facebook, alt: "Facebook", href: "https://www.facebook.com/anas0723" },
     { src: Leetcode, alt: "Leetcode" , href: "https://leetcode.com/u/anas0723/" },
   ];
+
+  const handleOpenResume = () => {
+    window.open(resume, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <>
       <div className="flex justify-center mt-13">
@@ -45,12 +51,12 @@ const SocialLinks = () => {
           </a>
         </div>
         <div>
-          <a
-            href=""
+          <button
+            onClick={handleOpenResume}
             className="relative z-10 my-2 flex items-center justify-between rounded-full bg-gradient-to-r from-[#089f7c] font-bold  to-[#06b6d4] p-3 py-3 px-6 shadow-xl hover:bg-gradient-to-l"
           >
-            Rusme
-          </a>
+            Resume
+          </button>
         </div>
       </div>
     </>
