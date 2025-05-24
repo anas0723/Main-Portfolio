@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <>
       {/* First Card */}
-      <div className="flex justify-center mt-13">
+      <div id="projects" className="flex justify-center mt-13">
       <h1 className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300  ">Project's</h1>
       </div>
       <div className=" min-h-screen flex items-center justify-center py-10 px-[30px]">

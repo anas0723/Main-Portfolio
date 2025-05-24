@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { decode } from "html-entities";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MainCursor from "./MainCursor";
+import Resume from "./Resume";
 
 const links = [
-  { title: "About", link: "#About" },
-  { title: "ToolKit", link: "#ToolKit" },
-  { title: "Projects", link: "#Projects" },
-  { title: "LinksHub", link: "#LinksHub" }
+  { title: "About", link: "#about" },
+  { title: "ToolKit", link: "#skills" },
+  { title: "Projects", link: "#projects" },
+  { title: "Contact", link: "#contact" }
 ];
 
 export default function Header() {
   const [isHamburgerOpen, setIsHamBurgerOpen] = useState(false);
+  const { handleOpenResume } = Resume();
 
   return (
     <header className="custom-bg flex justify-between items-center w-full p-4 relative z-10">
@@ -47,14 +49,12 @@ export default function Header() {
         ))}
         {/* Resume Button - Desktop */}
         <li className="ml-auto">
-          <a
+          <button
+            onClick={handleOpenResume}
             className="rounded-2xl text-white px-4 py-2 border-2 border-transparent shadow-none hover:shadow-lg hover:border-[#64ffda] hover:shadow-[#64ffda] transition-all duration-300 cursor-pointer"
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Resume
-          </a>
+          </button>
         </li>
       </ul>
 
@@ -77,14 +77,12 @@ export default function Header() {
           ))}
           {/* Resume Button - Mobile */}
           <li className="w-full flex justify-end pt-2">
-            <a
+            <button
+              onClick={handleOpenResume}
               className="rounded-2xl text-white px-4 py-2 border-2 border-transparent hover:border-[#64ffda] shadow-none hover:shadow-lg hover:shadow-[#64ffda] transition-all duration-300 mr-[-13px] cursor-pointer"
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               Resume
-            </a>
+            </button>
           </li>
         </ul>
       </div>
