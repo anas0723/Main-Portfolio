@@ -1,16 +1,16 @@
 import React from "react";
-import FallingText from "./FallingText";
-import Skill from "./Skill";
+import FallingText from "./FallingText.jsx";
+import Skill from "./Skill.jsx";
 import Project from "./Project.jsx";
 import SocialLinks from "./SocialLinks.jsx";
 import { LiaAcquisitionsIncorporated } from "react-icons/lia";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
 import { TypeAnimation } from "react-type-animation";
-import Cursor from  './Cursor.jsx';
-import Header  from "./Header.jsx";
+import Cursor from "./Cursor.jsx";
+import Header from "./Header.jsx";
 
-export default function Body(About, asdfsad, asdsad) {
+export default function Body() {
   return (
   <>
     <Header />
