@@ -1,7 +1,8 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import TodoImg from "../assets/Pictures/Todo.png";
-
+import DecentDetailers from "../assets/Pictures/decent-detailers.png";
+import SayyamInternational from "../assets/Pictures/sayyan-internationl.png";
 const Project = () => {
   return (
     <>
@@ -68,27 +69,27 @@ const Project = () => {
           {/* Project Image */}
           <div className="relative">
             <img
-              src={TodoImg}
-              alt="Todo App"
+              src={DecentDetailers}
+              alt="Car detailing"
               className="w-full  h-[300px] sm:h-[400px] md:h-[500px] object-cover"
             />
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/60 to-transparent text-white p-6 ">
-              <h3 className="text-3xl font-semibold text-[#000000]">
-                Todo App
+              <h3 className="text-3xl font-semibold text-[#64ffda]">
+                Car Detailing
               </h3>
               <p className="text-base mt-2  hidden sm:block text-gray-200">
-                A full-stack Todo App using ReactJS, Express & TailwindCSS. Add,
-                edit, and manage your tasks with a clean UI.
+               A Complete Car Detailing Website with a clean UI. Users can book
+                appointments.
               </p>
               <div className="flex flex-wrap gap-3 mt-4">
                 <span className="bg-[#64ffda] text-black px-4 py-1 rounded-full text-sm font-medium">
-                  ReactJS
+                  HTMl & CSS
                 </span>
                 <span className="bg-[#64ffda] text-black px-4 py-1 rounded-full text-sm font-medium">
-                  Express
+                  JavaScript
                 </span>
                 <span className="bg-[#64ffda] text-black px-4 py-1 rounded-full text-sm font-medium">
-                  TailwindCSS
+                  BootStrap
                 </span>
               </div>
             </div>
@@ -97,16 +98,16 @@ const Project = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-between bg-[#64ffda] px-6 py-5 rounded-b-3xl text-center sm:text-left gap-4 sm:gap-0">
             <a
-              href="https://github.com/anas0723/Todo-App"
+              // href="https://github.com/Car-Detailing-Website"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black font-semibold flex justify-center sm:justify-start items-center gap-2 hover:underline"
             >
               <FaGithub className="text-xl" />
-              GitHub Repo
+              This Reop is Private so I can't share it here.
             </a>
             <a
-              href="https://anas-todoapp-express.surge.sh/"
+              href="https://decentdetailers-c5534.web.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black font-semibold hover:underline"
@@ -122,8 +123,8 @@ const Project = () => {
           {/* Project Image */}
           <div className="relative">
             <img
-              src={TodoImg}
-              alt="Todo App"
+              src={SayyamInternational}
+              alt="Sayyam International"
               className="w-full  h-[300px] sm:h-[400px] md:h-[500px] object-cover"
             />
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/60 to-transparent text-white p-6 ">
@@ -131,16 +132,16 @@ const Project = () => {
                 Todo App
               </h3>
               <p className="text-base mt-2  hidden sm:block text-gray-200">
-                A full-stack Todo App using ReactJS, Express & TailwindCSS. Add,
-                edit, and manage your tasks with a clean UI.
+               A simple Logestic company figma design, converted into a
+                responsive website using ReactJS and TailwindCSS.
               </p>
               <div className="flex flex-wrap gap-3 mt-4">
                 <span className="bg-[#64ffda] text-black px-4 py-1 rounded-full text-sm font-medium">
                   ReactJS
                 </span>
-                <span className="bg-[#64ffda] text-black px-4 py-1 rounded-full text-sm font-medium">
-                  Express
-                </span>
+                {/* <span className="bg-[#64ffda] text-black px-4 py-1 rounded-full text-sm font-medium">
+                  
+                </span> */}
                 <span className="bg-[#64ffda] text-black px-4 py-1 rounded-full text-sm font-medium">
                   TailwindCSS
                 </span>
@@ -151,7 +152,7 @@ const Project = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-between bg-[#64ffda] px-6 py-5 rounded-b-3xl text-center sm:text-left gap-4 sm:gap-0">
             <a
-              href="https://github.com/anas0723/Todo-App"
+              href="https://github.com/anas0723/Sayyan-international"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black font-semibold flex justify-center sm:justify-start items-center gap-2 hover:underline"
@@ -160,7 +161,7 @@ const Project = () => {
               GitHub Repo
             </a>
             <a
-              href="https://anas-todoapp-express.surge.sh/"
+              href="http://sayyam-internatinol.surge.sh/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black font-semibold hover:underline"
