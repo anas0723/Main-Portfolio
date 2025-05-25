@@ -82,6 +82,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+Your Name - Muhammad Anas Soomro -anassoomro23@gmail.com.com
 
-Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio) 
+Project Link: https://anas23.vercel.app/ 
