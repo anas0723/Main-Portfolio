@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="px-[30px] min-h-screen flex items-center justify-center">
-      <div className="bg-[#112240] p-10 w-full max-w-3xl">
+      <div className="bg-[#112240] p-10 w-full max-w-3xl text-center">
         <div className="flex justify-center mt-13">
           <h2 className="text-3xl font-bold p-4 mb-6 text-centermd:text-6xl sm:text-3xl font-mono hover:border-2 flex items-center justify-center text-[#64ffda] mono rounded-lg border-2 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-[#64ffda]">
             Contact Me

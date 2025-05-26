@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { decode } from "html-entities";
 import { RxHamburgerMenu } from "react-icons/rx";
-import MainCursor from "./MainCursor";
-import Resume from "./Resume";
+import MainCursor from "./MainCursor.jsx";
+import resume from "../assets/Pictures/anas-me-resume.pdf";
 
 const links = [
   { title: "About", link: "#about" },
@@ -13,17 +12,20 @@ const links = [
 
 export default function Header() {
   const [isHamburgerOpen, setIsHamBurgerOpen] = useState(false);
-  const { handleOpenResume } = Resume();
+
+  const handleOpenResume = () => {
+    window.open(resume, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <header className="custom-bg flex justify-between items-center w-full p-4 relative z-10">
       <h1>
         <a href="/" className="text-3xl text-right relative group cursor-pointer">
-          {decode("&lt")}{" "}
+          <span className="text-white">&lt;</span>{" "}
           <span className="specific-color allura-regular text-4xl relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#3fc1a3] after:transition-all after:duration-300 after:ease-in-out group-hover:after:w-full">
             M.Anas
           </span>{" "}
-          {decode("&gt")}
+          <span className="text-white">&gt;</span>
         </a>
       </h1>
 

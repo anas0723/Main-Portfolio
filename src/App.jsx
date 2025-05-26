@@ -1,9 +1,12 @@
 import React from "react";
-import Body from "./components/Body";
-// import Header from "./components/Header";
+import Body from "./components/Body.jsx";
+import Header from "./components/Header.jsx";
+
 export default function App() {
   return (
-    // <Header />,
-    <Body />
+    <>
+      <Header />
+      <Body />
+    </>
   );
-} 
+}
