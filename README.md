@@ -9,7 +9,6 @@ A modern, responsive portfolio website built with React and Vite, featuring smoo
 - 📱 Fully responsive
 - ⚛️ React components
 - 🎭 Smooth animations
-- 🔍 SEO optimized
 - 📦 Optimized build
 - 🚀 Fast performance
 - 📝 Easy to customize
@@ -27,27 +26,7 @@ A modern, responsive portfolio website built with React and Vite, featuring smoo
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/portfolio.git
-```
-
-2. Navigate to the project directory
-```bash
-cd portfolio
-```
-
-3. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
+- Node.js (v16 or higher
 
 4. Start the development server
 ```bash
