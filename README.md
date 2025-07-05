@@ -20,7 +20,7 @@ A modern, responsive portfolio website built with React and Vite, featuring smoo
 - CSS3
 - JavaScript (ES6+)
 - Git
-- Vercel (Deployment)
+- Vercel
 
 ## 🏁 Getting Started
 
