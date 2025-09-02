@@ -61,7 +61,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-Your Name - Muhammad Anas Soomro -anassoomro23@gmail.com.com
+Muhammad Anas Soomro -anassoomro23@gmail.com
 
 Project Link: https://anas23.vercel.app
 
