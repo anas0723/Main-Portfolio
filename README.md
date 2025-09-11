@@ -66,4 +66,4 @@ Muhammad Anas Soomro -anassoomro23@gmail.com
 Project Link: https://anas23.vercel.app
 
 
-strat to update 
+Start to uptdate
