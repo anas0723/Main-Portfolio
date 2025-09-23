@@ -7,20 +7,23 @@ const links = [
   { title: "About", link: "#about" },
   { title: "ToolKit", link: "#skills" },
   { title: "Projects", link: "#projects" },
-  { title: "Contact", link: "#contact" }
+  { title: "Contact", link: "#contact" },
 ];
 
 export default function Header() {
   const [isHamburgerOpen, setIsHamBurgerOpen] = useState(false);
 
   const handleOpenResume = () => {
-    window.open(resume, '_blank', 'noopener,noreferrer');
+    window.open(resume, "_blank", "noopener,noreferrer");
   };
 
   return (
     <header className="custom-bg flex justify-between items-center w-full p-4 relative z-10">
       <h1>
-        <a href="/" className="text-3xl text-right relative group cursor-pointer">
+        <a
+          href="/"
+          className="text-3xl text-right relative group cursor-pointer"
+        >
           <span className="text-white">&lt;</span>{" "}
           <span className="specific-color allura-regular text-4xl relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#3fc1a3] after:transition-all after:duration-300 after:ease-in-out group-hover:after:w-full">
             M.Anas
@@ -47,6 +50,23 @@ export default function Header() {
             >
               {item.title}
             </a>
+            {/* Dropdown for Projects */}
+            {item.title === "Projects" && (
+              <div className="">
+                <div className="bg-[#0a192f] border border-[#3fc1a3] rounded-lg shadow-lg shadow-[#64ffda]/20 p-3 whitespace-nowrap">
+                  <button
+                    onClick={() =>
+                      document
+                        .getElementById("projects")
+                        ?.scrollIntoView({ behavior: "smooth" })
+                    }
+                    className="text-white hover:text-[#64ffda] transition-colors duration-200 text-sm cursor-pointer"
+                  >
+                    View All Projects
+                  </button>
+                </div>
+              </div>
+            )}
           </li>
         ))}
         {/* Resume Button - Desktop */}
@@ -63,7 +83,9 @@ export default function Header() {
       {/* Mobile Menu with Smooth Transition */}
       <div
         className={`absolute top-full right-0 w-full bg-[#0a192f] py-4 px-6 sm:hidden transition-all duration-300 ease-in-out transform ${
-          isHamburgerOpen ? "translate-y-0 opacity-100" : "-translate-y-5 opacity-0 pointer-events-none"
+          isHamburgerOpen
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-5 opacity-0 pointer-events-none"
         }`}
       >
         <ul className="flex flex-col items-end">
@@ -75,6 +97,22 @@ export default function Header() {
               >
                 {item.title}
               </a>
+              {/* Mobile dropdown for Projects */}
+              {item.title === "Projects" && (
+                <div className="mt-2 pl-4">
+                  <button
+                    onClick={() => {
+                      document
+                        .getElementById("projects")
+                        ?.scrollIntoView({ behavior: "smooth" });
+                      setIsHamBurgerOpen(false);
+                    }}
+                    className="text-[#64ffda] hover:text-white transition-colors duration-200 text-sm cursor-pointer block"
+                  >
+                    → View All Projects
+                  </button>
+                </div>
+              )}
             </li>
           ))}
           {/* Resume Button - Mobile */}
