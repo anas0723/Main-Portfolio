@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
 import MainCursor from "./MainCursor.jsx";
 import resume from "../assets/Pictures/anas-me-resume.pdf";
@@ -50,22 +51,14 @@ export default function Header() {
             >
               {item.title}
             </a>
-            {/* Dropdown for Projects */}
+            {/* Inline hover option for Projects */}
             {item.title === "Projects" && (
-              <div className="">
-                <div className="bg-[#0a192f] border border-[#3fc1a3] rounded-lg shadow-lg shadow-[#64ffda]/20 p-3 whitespace-nowrap">
-                  <button
-                    onClick={() =>
-                      document
-                        .getElementById("projects")
-                        ?.scrollIntoView({ behavior: "smooth" })
-                    }
-                    className="text-white hover:text-[#64ffda] transition-colors duration-200 text-sm cursor-pointer"
-                  >
-                    View All Projects
-                  </button>
-                </div>
-              </div>
+              <Link
+                to="/projects"
+                className="absolute left-1/2 -translate-x-1/2 top-full mt-1 text-lg text-white/80 hover:text-white opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 cursor-pointer whitespace-nowrap after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#3fc1a3] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+              >
+                View All Projects
+              </Link>
             )}
           </li>
         ))}
@@ -99,19 +92,13 @@ export default function Header() {
               </a>
               {/* Mobile dropdown for Projects */}
               {item.title === "Projects" && (
-                <div className="mt-2 pl-4">
-                  <button
-                    onClick={() => {
-                      document
-                        .getElementById("projects")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                      setIsHamBurgerOpen(false);
-                    }}
-                    className="text-[#64ffda] hover:text-white transition-colors duration-200 text-sm cursor-pointer block"
-                  >
-                    → View All Projects
-                  </button>
-                </div>
+                <Link
+                  to="/projects"
+                  onClick={() => setIsHamBurgerOpen(false)}
+                  className="relative mt-1 pr-1 text-lg text-white transition-colors duration-300 cursor-pointer whitespace-nowrap after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#3fc1a3] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                >
+                  View All Projects
+                </Link>
               )}
             </li>
           ))}
