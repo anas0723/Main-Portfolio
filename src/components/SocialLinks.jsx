@@ -1,6 +1,6 @@
 import React from "react";
 import Instagram from "../assets/Pictures/Instagram.png";
-import Github from "../assets/Pictures/Github-icons.svg";
+import Github from "../assets/Pictures/github-icons.svg";
 import LinkedIn from "../assets/Pictures/linkdin.jpg";
 import Facebook from "../assets/Pictures/Facebook.jpg";
 import Leetcode from "../assets/Pictures/Leetcode.webp";
