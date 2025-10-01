@@ -68,7 +68,7 @@ export default function Body() {
                 maintainable code and love solving complex problems. Check out
                 some of my work
                 <span className="font-semibold text-[#64ffda] hover:underline ml-1">
-                  <a href="#Project" className="cursor-pointer">
+                  <a href="#projects" className="cursor-pointer">
                     Projects
                   </a>
                 </span>

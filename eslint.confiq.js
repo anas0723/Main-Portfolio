@@ -1,1 +1,1 @@
-2
+// obsolete file removed; using eslint.config.js flat config now
