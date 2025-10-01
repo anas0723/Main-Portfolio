@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
 import MainCursor from "./MainCursor.jsx";
 import resume from "../assets/Pictures/anas-me-resume.pdf";
@@ -21,8 +21,8 @@ export default function Header() {
   return (
     <header className="custom-bg flex justify-between items-center w-full p-4 relative z-10">
       <h1>
-        <a
-          href="/"
+        <Link
+          to="/"
           className="text-3xl text-right relative group cursor-pointer"
         >
           <span className="text-white">&lt;</span>{" "}
@@ -30,7 +30,7 @@ export default function Header() {
             M.Anas
           </span>{" "}
           <span className="text-white">&gt;</span>
-        </a>
+        </Link>
       </h1>
 
       {/* Hamburger Menu Button */}
