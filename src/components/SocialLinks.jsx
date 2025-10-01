@@ -3,7 +3,7 @@ import Instagram from "../assets/Pictures/Instagram.png";
 import Github from "../assets/Pictures/github-icons.svg";
 import LinkedIn from "../assets/Pictures/linkdin.jpg";
 import Facebook from "../assets/Pictures/Facebook.jpg";
-import Leetcode from "../assets/Pictures/Leetcode.webp";
+import Leetcode from "../assets/Pictures/leetcode.webp";
 import resume from "../assets/Pictures/anas-me-resume.pdf";
 
 const SocialLinks = () => {
