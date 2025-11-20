@@ -63,4 +63,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Muhammad Anas Soomro -anassoomro23@gmail.com
 anas addesing aom
-Project Link: https://anas23.vercel.app
+Project Link: https://anas23.vercel.appanas
