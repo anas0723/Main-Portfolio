@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
 import MainCursor from "./MainCursor.jsx";
-import resume from "../assets/Pictures/anas-me-resume.pdf";
+import resume from "../assets/Pictures/anas-resume-1.pdf";
 
 const links = [
   { title: "About", link: "#about" },

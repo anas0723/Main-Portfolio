@@ -4,11 +4,11 @@ import Github from "../assets/Pictures/github-icons.svg";
 import LinkedIn from "../assets/Pictures/linkdin.jpg";
 import Facebook from "../assets/Pictures/Facebook.jpg";
 import Leetcode from "../assets/Pictures/leetcode.webp";
-import resume from "../assets/Pictures/anas-resume.pdf";
+import resume from "../assets/Pictures/anas-resume-1.pdf";
 
 const SocialLinks = () => {
   const images = [
-    { src: Instagram, alt: "Instagram", href: "https://www.instagram.com/muhammadanas0723/" },
+    { src: Instagram, alt: "Instagram", href: "https://www.instagram.com/m.anas0723/" },
     { src: Github, alt: "Github", href:"https://github.com/anas0723"},
     { src: LinkedIn, alt: "LinkedIn", href: "https://www.linkedin.com/in/anas0723/" },
     { src: Facebook, alt: "Facebook", href: "https://www.facebook.com/anas0723" },
