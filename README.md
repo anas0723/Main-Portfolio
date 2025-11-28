@@ -56,7 +56,7 @@ The site is configured for easy deployment on Vercel. Simply push to your reposi
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## 👥 Contributing
-only me
+only me The
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
