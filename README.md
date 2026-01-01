@@ -56,11 +56,11 @@ The site is configured for easy deployment on Vercel. Simply push to your reposi
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## 👥 Contributing
-
+only me The
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
 Muhammad Anas Soomro -anassoomro23@gmail.com
-anas addesing aom
-Project Link: https://anas23.vercel.appanas
+anas
+Project Link: https://anas23.vercel.app
