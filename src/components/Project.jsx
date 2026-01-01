@@ -4,6 +4,8 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import TodoImg from "../assets/Pictures/Todo.png";
 import DecentDetailers from "../assets/Pictures/decent-detailers.png";
 import SayyamInternational from "../assets/Pictures/sayyan-internationl.png";
+import Schedlit from "../assets/Pictures/schedlit.png";
+
 
 const projects = [
   {
@@ -15,6 +17,17 @@ const projects = [
     alt: "Todo app dashboard",
     repoUrl: "https://github.com/anas0723/Todo-App",
     liveUrl: "https://anas-todoapp-express.surge.sh/",
+    status: "Featured Build",
+  },
+    {
+    title: "Schedlit Voice AI Agent ",
+    blurb:
+    "Schedlit is a lightweight scheduling tool designed to reduce friction in planning and coordination. Built with a focus on clarity and usability, it helps users organize schedules, surface conflicts, and make time management more intentional rather than reactive",  
+    tech: ["Supabase", "AWS", "Node Js", "Clerk",  "Express", "Tailwind", "NextJS"],
+    image: Schedlit,
+    alt: "Todo app dashboard",
+    repoUrl: null,
+    liveUrl: "https://schedlit.com/",
     status: "Featured Build",
   },
   {

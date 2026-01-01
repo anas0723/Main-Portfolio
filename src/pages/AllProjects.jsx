@@ -15,38 +15,19 @@ const projects = [
       "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=80",
     label: "Concept Studio",
   },
+
+
   {
-    title: "Lumen Design System",
+    title: "Laiba Jamal Studio",
     description:
-      "An accessible UI kit with dark mode, robust component tokens, and a Figma-aligned theming pipeline ready for production teams.",
-    tech: ["Next.js", "Tailwind", "Storybook", "Framer Motion"],
-    repoUrl: "https://github.com/example/lumen-design-system",
-    liveUrl: "https://example.com/lumen-design-system",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-    label: "Design Ops",
-  },
-  {
-    title: "Pulse Health Platform",
-    description:
-      "A patient-first portal featuring appointment triage, wearable integrations, and visual care journeys across devices.",
-    tech: ["Vue", "Tailwind", "Supabase", "Chart.js"],
-    repoUrl: "https://github.com/example/pulse-health",
-    liveUrl: "https://example.com/pulse-health",
-    image:
-      "https://images.unsplash.com/photo-1517142089942-ba376ce32a0b?auto=format&fit=crop&w=1200&q=80",
-    label: "Product Sprint",
-  },
-  {
-    title: "Orbit Commerce Suite",
-    description:
-      "A conversion-focused storefront with personalized recommendations, A/B testing hooks, and streamlined checkout flows.",
-    tech: ["Remix", "Tailwind", "Stripe", "Cloudflare"],
-    repoUrl: "https://github.com/example/orbit-commerce",
-    liveUrl: "https://example.com/orbit-commerce",
-    image:
-      "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80",
-    label: "E-Commerce",
+      "A sophisticated fashion e-commerce platform showcasing elegant apparel collections with trending styles, seasonal sales, and curated fashion experiences.",
+    tech: ["React", "Tailwind", "E-Commerce", "Fashion"],
+    repoUrl: null,
+    liveUrl: "https://www.laibajamal.com/",
+    image: "src/assets/Pictures/project-lai.png",
+   
+    label: "Fashion",
+    isPrivate: true,
   },
 ];
 
@@ -86,15 +67,22 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="flex items-center justify-between border-t border-white/10 px-6 py-5 text-sm">
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 font-semibold text-gray-200 transition-colors duration-200 hover:text-[#64ffda]"
-        >
-          <FaGithub className="text-lg" />
-          Repo
-        </a>
+        {project.isPrivate ? (
+          <span className="flex items-center gap-2 font-semibold text-gray-400">
+            <FaGithub className="text-lg text-gray-500" />
+            Private Repo
+          </span>
+        ) : (
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 font-semibold text-gray-200 transition-colors duration-200 hover:text-[#64ffda]"
+          >
+            <FaGithub className="text-lg" />
+            Repo
+          </a>
+        )}
         <a
           href={project.liveUrl}
           target="_blank"
